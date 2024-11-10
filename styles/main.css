@@ -155,8 +155,9 @@ footer a:hover {
 }
 
 .flip-button {
+  font-family: var(--font-body);
   background-color: var(--color-accent);
-  color: white;
+  color: var(--color-background);
   border: none;
   padding: 0.5rem 1rem;
   border-radius: var(--border-radius);
@@ -255,22 +256,4 @@ footer a:hover {
   height: auto;
   opacity: 1;
   padding: 1rem 0;
-}
-
-.special-link {
-  display: inline-block;
-  margin: 1rem 0;
-  padding: 0.8rem 1.5rem;
-  background-color: var(--color-background);
-  color: white;
-  text-decoration: none;
-  border-radius: var(--border-radius);
-  transition: all 0.3s ease;
-}
-
-.special-link:hover {
-  background-color: var(--color-accent);
-  color: var(--color-background);
-  transform: scale(1.05);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
