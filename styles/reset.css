@@ -71,3 +71,34 @@ h6 {
 #__next {
   isolation: isolate;
 }
+
+.balloon {
+  position: fixed;
+  width: 50px;
+  height: 70px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  animation: floatUp 5s linear infinite;
+  cursor: pointer; /* Make it clear that balloons can be clicked */
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.balloon:hover {
+  transform: scale(1.1); /* Slightly grow when hovered */
+}
+
+.balloon.popped {
+  transform: scale(0); /* Shrink to zero size */
+  opacity: 0; /* Fade out */
+}
+
+@keyframes floatUp {
+  0% {
+      transform: translateY(100vh);
+      opacity: 1;
+  }
+  100% {
+      transform: translateY(-100vh);
+      opacity: 0;
+  }
+}

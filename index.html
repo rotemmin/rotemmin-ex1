@@ -8,21 +8,24 @@
     <link href="/styles/main.css" rel="stylesheet" />
   </head>
   <body>
-    <header role="banner">
-      <h1>Welcome to my Website!</h1>
-    </header>
-    <main>
-      <p>This is a paragraph.</p>
-      <a href="/elements.html">Elements Page</a>
-
-      <div class="counter">
-        <h2>Counter</h2>
-        <button id="increment" class="counter-button">+</button>
-        <button id="decrement" class="counter-button">−</button>
-        <span id="count">0</span>
-      </div>
-    </main>
-
+    <div class="page-wrapper">
+      <header>
+        <h1>Welcome to the world of balloons!</h1>
+      </header>
+      <main>
+        <div class="balloon-container"></div>
+        <p>Press the button to start the party.</p>
+        <button id="start-button">Surprise!</button>
+        <div class="content">
+          <p>Do you want to learn more about balloons?</p>
+          <a href="about.html" class="special-link">Check out Fun Balloon Facts!</a>
+          <img src="https://img.freepik.com/premium-photo/pink-balloon-sky-with-clouds_391229-7939.jpg" alt="Colorful balloon" width="500">
+        </div>
+      </main>
+      <footer>
+        <p>All rights reserved © 2024 | <a href="https://example.com/contact">Contact Us</a></p>
+      </footer>
+    </div>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
